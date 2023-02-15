@@ -69,7 +69,7 @@ class Collider:
             return True
 
     def leftLevelBorderReached(self):
-        if self.entity.rect.x < 0: #TODO: 0 -> -100
+        if self.entity.rect.x < 0:
             self.entity.rect.x = 0
             self.entity.vel.x = 0
             return True
