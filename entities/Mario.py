@@ -140,7 +140,7 @@ class Mario(EntityBase):
 
     def killEntity(self, ent):
         if ent.__class__.__name__ != "Koopa":
-            ent.alive = False #TODO: False -> True
+            ent.alive = False
         else:
             ent.timer = 0
             ent.leftrightTrait.speed = 1
